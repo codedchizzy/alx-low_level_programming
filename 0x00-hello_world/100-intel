@@ -1,0 +1,2 @@
+#!/bin/bash
+CFILE="man.c" gcc -S -masm=intel $CFILE -o {$CFILE%.*}.s
