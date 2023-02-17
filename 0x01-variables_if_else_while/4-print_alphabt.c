@@ -8,16 +8,16 @@
 
 int main(void)
 {
-	char alp = 'abcdefghijklmnopqrstuvwxyz';
+	char alp = 'a';
 
-	while (alp <= z)
+	while (alp <= 'z')
 	{
-		if (alp != 'e' && alp != 'q')
+		if ((alp != 'e') && (alp != 'q'))
 		{
 			putchar(alp);
 		}
-		alp++
+		alp++;
 	}
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
