@@ -1,18 +1,27 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 /**
-  *main - this is the entry point
-  *Return: this ends the program
+  *main - is the entry point
+  *Return: ends the program with value 0 succes
   */
+
 int main(void)
 {
-	char string[] = "abcdefghijklmnopqrstuvwxyz";
-	int i = 0;
+	int alp = 'a';
+	int ALP = 'A';
 
-	while (string[i] != '\0')
+	while (alp <= 'z')
 	{
-		putchar(string[i]);
-		i++;
+		putchar(alp);
+		alp++;
 	}
-	putchar('\n');
-	return (0);
+	while (ALP <= 'Z')
+	{
+		putchar(ALP);
+		ALP++;
+	}
+		putchar('\n');
+		return (0);
 }
+
