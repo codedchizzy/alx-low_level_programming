@@ -13,13 +13,13 @@ int main(void)
 		putchar(string1[i]);
 	}
 
-	
+
 
 	for (int i = 0; string2[i] != '\0'; i++)
 	{
 		putchar(string2[i]);
 	}
-	
+
 	putchar('\n');
 
 	return (0);
