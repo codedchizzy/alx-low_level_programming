@@ -1,26 +1,24 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
-  *main - this is the entry point
-  *Return: this ends the program
-  */
+  * main - A program that prints the alphabets in lowercase and uppercase
+   * Return: Always 0 (Success)
+   */
 int main(void)
 {
-	char string1[] = "abcdefghijklmnopqrstuvwxyz";
-	char string2[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int alp = 'a';
+	int ALP = 'A';
 
-	for (int i = 0; string1[i] != '\0'; i++)
+	while (alp <= 'z')
 	{
-		putchar(string1[i]);
+		putchar(alp);
+		alp++;
 	}
-
-
-
-	for (int i = 0; string2[i] != '\0'; i++)
+	while (ALP <= 'Z')
 	{
-		putchar(string2[i]);
+		putchar(ALP);
+		ALP++;
 	}
-
-	putchar('\n');
-
+		putchar('\n');
 	return (0);
 }
