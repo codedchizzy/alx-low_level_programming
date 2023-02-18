@@ -9,17 +9,11 @@
 int main(void)
 {
 	int alp = 'a';
-	int ALP = 'A';
 
 	while (alp <= 'z')
 	{
 		putchar(alp);
 		alp++;
-	}
-	while (ALP <= 'Z')
-	{
-		putchar(ALP);
-		ALP++;
 	}
 		putchar('\n');
 		return (0);
