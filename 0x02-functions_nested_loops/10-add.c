@@ -1,15 +1,15 @@
-#include "min.h"
+#include "main.h"
 #include <stdio.h>
 /**
-  *add - sum of two numbers
-  *return end the progrm
-  */
+  * add - a function that adds two integers and returns the result.
+  * @a: int to be added to b
+  * @b: int to be added to a
+  * Return: sum of a and b*/
 
-int add(int, int)
+int add(int a, int b)
 {
-	int a, b, s;
 
-	int s = a + b;
-	_putchar(s + '1')
+	int s;
+	s = a  + b;
 	return (0);
 }
