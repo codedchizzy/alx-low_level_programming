@@ -1,4 +1,3 @@
-#include <stdio.h>
 #define _putchar(c) putchar(c)
 
 void print_alphabet(void)
