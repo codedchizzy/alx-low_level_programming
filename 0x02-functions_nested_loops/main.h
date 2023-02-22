@@ -1,13 +1,7 @@
-#define _putchar(c) putchar(c)
+#ifndef main_h
+#define main_h
 
-void print_alphabet(void)
-{
-	int alp;
+int _putchar(char);
+void print_alphabet(void);
 
-	for (alp = 'a'; alp <= 'z'; alp++)
-	{
-		_putchar(alp);
-	}
-	_putchar('\n');
-}
-
+#endif

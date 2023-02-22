@@ -1,13 +1,17 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
-  *main - this is the entry point
+  *print_alphabet - prints a-z
   *Return: ends the program
   */
 
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+	char c;
+
+	for (c = 'a'; c <= 'z'; c++)
+	{
+		_putchar(c);
+	}
+	_putchar('\n');
 }
