@@ -2,7 +2,6 @@
 
 /**
   *main - is the entry point
-  *positive_or_negative - check for positive or negative
   *Return: ends the program
   */
 

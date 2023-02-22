@@ -1,11 +1,13 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+#include "main.h"
+
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
 /**
-  *main - is the entry point
+  *positive_or_negative - is the entry point
   *srand - generate random numbers
   *Return: endsthe program with valye of 0
   */
