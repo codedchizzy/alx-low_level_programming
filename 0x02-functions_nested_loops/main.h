@@ -1,11 +1,14 @@
+#include <stdio.h>
+#define _putchar(c) putchar(c)
+
 void print_alphabet(void)
 {
 	int alp;
 
 	for (alp = 'a'; alp <= 'z'; alp++)
 	{
-		putchar(alp);
+		_putchar(alp);
 	}
-	putchar('\n');
+	_putchar('\n');
 }
 
