@@ -11,7 +11,11 @@ int _isupper(int c)
 	{
 		_putchar('1');
 	}
-	if (c >= 'a')
+	else if (c <= 'Z')
+	{
+		_putchar('1');
+	}
+	else 
 	{
 		_putchar('0');
 	}
