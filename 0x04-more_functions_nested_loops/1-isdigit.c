@@ -2,7 +2,7 @@
 
 /**
  * _isdigit - checks for digti
- * @c - is the character that is checked
+ * @c: is the character that is checked
  * Return: returns the value
  */
 
