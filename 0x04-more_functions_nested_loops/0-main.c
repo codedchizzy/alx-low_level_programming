@@ -3,11 +3,11 @@
 
 int main(void)
 {
-	char c;
+	char a;
 
-	c = 'A';
-	printf("%c: %d\n", c, _isupper(c));
-	c = 'a';
-	printf("%c: %d\n", c, _isupper(c));
+	a = 'A';
+	printf("%c: %d\n", a, _isupper(a));
+	a = 'a';
+	printf("%c: %d\n", a, _isupper(a));
 	return (0);
 }
