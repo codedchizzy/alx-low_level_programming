@@ -1,23 +1,24 @@
 #include "main.h"
 
 /**
- * more_numbers - hdhdhj
+ * more_numbers - prints numbers 0 to 14 ten times
+ * Return: void
  */
-
 void more_numbers(void)
 {
-	int b, a;
+	int i, j;
 
-	for (b = 0; b < 10; b++)
+	for (j = 0; j < 10; j++)
 	{
-		for (a = 0; a <= 14; a++)
+		for (i = 0; i <= 14; i++)
 		{
-			if (a >= 10)
+			if (i >= 10)
 			{
-				_putchar(a / 10 + '0');
-				_putchar(a % 10 + '0');
+				_putchar(i / 10 + '0');
 			}
+			_putchar(i % 10 + '0');
 		}
 		_putchar('\n');
 	}
 }
+
