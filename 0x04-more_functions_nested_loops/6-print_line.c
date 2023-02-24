@@ -2,7 +2,7 @@
 
 /**
   *print_line - print line n long
-  *@n: hwhh
+  *@n: is the character
   */
 void print_line(int n)
 {

@@ -1,8 +1,9 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
-  *print_diagonal - print line n long
-  *@n: hwhh
+  *print_diagonal - print diagonal n long
+  *@n: character
   */
 void print_diagonal(int n)
 {
