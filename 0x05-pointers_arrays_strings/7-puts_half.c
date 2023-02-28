@@ -1,23 +1,23 @@
 #include "main.h"
 
+/**
+ * puts_half - hdhdh
+ * @str: bdhdhdh
+ */
+
 void puts_half(char *str)
 {
-	int i, j, l, n;
+	int i, l, n;
+
+	l = 0;
 
 	for (i = 0; str[i] != '\0'; i++)
-	{
-		l = i;
-	}
+		l++;
+	n = (l / 2);
 
-	for (j = (l / 2) + 1; str[j] != '\0'; j++)
-		{
-			_putchar(str[j]);
-		}
-	if ((l % 2) != 0)
-	{
-		n = ((l - 1) / 2);
-		_putchar(str[n]);
-	}
-		
+	if ((l % 2) == 0)
+		n = ((l + 1) / 2);
+	for (i = n; str[i] != '\0'; i++)
+		_putchar(str[i]);
 	_putchar('\n');
 }
