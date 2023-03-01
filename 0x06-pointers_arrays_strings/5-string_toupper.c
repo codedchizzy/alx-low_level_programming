@@ -3,7 +3,7 @@
 
 /**
   *string_toupper - to upper
-  *@ : jjsh
+  *@str : jjsh
   *Return: return str
   */
 
