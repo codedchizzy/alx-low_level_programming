@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+  * _memset - set a block of memory to a perticular value
+  * @s: the value to be replaced
+  * @b: the character to replace with
+  * @n: times to @s be would be replace
+  * Return: return @s to the main
+  */
+
 char *_memset(char *s, char b, unsigned int n)
 {
 	int i;
@@ -9,5 +17,5 @@ char *_memset(char *s, char b, unsigned int n)
 		s[i] = b;
 	}
 
-	return(s);
+	return (s);
 }
