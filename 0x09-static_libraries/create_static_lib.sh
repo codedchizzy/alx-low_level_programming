@@ -19,5 +19,4 @@ cc -c 3-puts.c -o 3-puts.o
 cc -c 3-strspn.c -o 3-strspn.o
 cc -c 4-strpbrk.c -o 4-strpbrk.o
 cc -c 6-abs.c -o 6-abs.o
-ar rcs liball.a *.o
-
+ar rc liball.a *.o
