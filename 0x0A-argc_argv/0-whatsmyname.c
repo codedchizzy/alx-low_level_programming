@@ -3,9 +3,9 @@
 
 /**
   *main - start the program
-  *argc: argument character
-  *argv: argument vector
-  *return: 0
+  *@argc: argument character
+  *@argv: argument vector
+  *Return: 0
   */
 
 int main(int __attribute__((unused)) argc, char *argv[])
