@@ -63,7 +63,7 @@ char *_strdup(char *str)
 {
 	char *ptr = malloc(_strlen_recursion(str) * sizeof(char) + 1);
 
-	if (ptr == NULL)
+	if (str == NULL)
 		return (NULL);
 
 	if (ptr != NULL)
