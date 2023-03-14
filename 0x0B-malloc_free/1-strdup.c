@@ -61,10 +61,7 @@ int _strlen_recursion(char *s)
 
 char *_strdup(char *str)
 {
-	char *ptr = malloc(_strlen_recursion(str) * sizeof(char));
-
-	if (str == NULL)
-		return (NULL);
+	char *ptr = malloc(_strlen_recursion(str) * sizeof(char) + 1);
 
 	if (ptr == NULL)
 		return (NULL);
