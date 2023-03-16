@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * string_nconcat - concatenates two strings
@@ -9,39 +10,39 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i, j, size, len1, len2;
 	char *ptr;
+	unsigned int i, j, k;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	len1 = _strlen(s1);
-	len2 = _strlen(s2);
-	if (n > len2)
-		n = len2;
-	size = len1 + n;
-	ptr = malloc(sizeof(char) * size + 1);
-	if (!ptr)
+
+	for (i = 0; s1[i] != '\0'; i++)
+		;
+
+	for (j = 0; s2[j] != '\0'; j++)
+		;
+
+	if (n >= j)
+		n = j;
+
+	ptr = malloc(sizeof(*ptr) * (n + i + 1));
+
+	if (ptr == NULL)
 		return (NULL);
-	for (i = 0; i < len1; i++)
-		ptr[i] = s1[i];
-	for (j = 0; j < n; j++, i++)
-		ptr[i] = s2[j];
-	ptr[i] = 0;
+
+	for (k = 0; k < i; k++)
+	{
+		ptr[k] = s1[k];
+	}
+
+	for (k = 0; k < n; k++)
+	{
+		ptr[i + k] = s2[k];
+	}
+
+	ptr[i + j] = '\0';
+
 	return (ptr);
-}
-
-/**
- * _strlen - returns the length of a string
- * @s: string s
- * Return: length of string
- */
-int _strlen(char *s)
-{
-	char *p = s;
-
-	while (*s)
-		s++;
-	return (s - p);
 }
